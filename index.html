@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cylinder volume</title>
+</head>
+
+<body>
+    <script>
+function computeVolume(){
+ 
+  
+    var x = document.getElementById('Height').value;
+    var y = document.getElementById('Radius').value;
+
+  
+    this.x = x;
+    this.y = y;
+
+
+    var radius = this.y;
+    var v = this.x * Math.PI * radius * radius;
+    
+
+    alert('sum of  '+ x +' height and '+y+' radius of a cyliner is '+v+' units.');
+}
+
+</script>
+<body>
+    <h2>Enter Height and Radius Below</h2><br>
+  
+  <div clas = "container">
+    Height<input type="text" id="Height"><br>
+
+    Radius<input type="text" id ="Radius">
+    <br>
+    <button type="text" id="Calculate" onClick="computeVolume()" > Calculate</button>
+  </div>
+
+</body>
+
+</html>
